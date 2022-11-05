@@ -1,0 +1,29 @@
+@import url('fonts');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-cover{
+    background: url(images/numeron-bg.png)no-repeat;
+    background-size: cover;    
+}
+body {
+    font-family: 'Russo One', sans-serif;
+    color:white;
+    height: 100vh;
+    flex-direction: column;
+}
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#logo {
+    width: 80%;
+    height: auto;
+}
+.play {
+    width: 180px;
+    cursor: pointer;
+}
