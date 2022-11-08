@@ -19,6 +19,10 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
+.game {
+    background: url(images/game-inside-bg.png) no-repeat;
+    background-size: cover;
+}
 #logo {
     width: 80%;
     height: auto;
@@ -27,3 +31,74 @@ body {
     width: 180px;
     cursor: pointer;
 }
+
+#numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number-holder {
+    background-color: white;
+    color: black;
+    width: 25vw;
+    max-width: 200px;
+    max-height: 200px;
+    height: 25vw;
+    border: 2px solid #EE2689;
+}
+
+#instructions {
+    font-size: 6vw;
+}
+
+#numbers * {
+    font-size: 4vw;
+}
+
+#buttons * {
+    width: 25%;
+    min-width: 120px;
+    cursor: pointer;
+}
+
+#timer {
+    width: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    font-size: 6vw;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+#game-over-text {
+    width: 50%;
+    max-width: 500px;
+}
+
+#score-box {
+    font-size: 6vw;
+    border: 1px solid white;
+    padding: 2vw;
+}
+
+.operators {
+    font-size: 3em;
+    border: 1px solid #ee2689;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin-right: 100px;
+    border-radius: 50%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
