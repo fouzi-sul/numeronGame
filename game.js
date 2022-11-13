@@ -87,6 +87,52 @@ const modulus= document.getElementById("modulus")
  otherwise: redirect to gameover.html
 **/
 
+plus.onclick=()=>{
+     if((number1+number2)==number3){
+        score++
+        randomise()
+        resetTime(timerId)
+     }else{
+        location.href= "./gameover.html?score=" + score;
+     }
+}
+minus.onclick=()=>{
+    if((number1-number2)==number3){
+       score++
+       randomise()
+       resetTime(timerId)
+    }else{
+       location.href= "./gameover.html?score=" + score;
+    }
+}
+mul.onclick=()=>{
+    if((number1*number2)==number3){
+       score++
+       randomise()
+       resetTime(timerId)
+    }else{
+       location.href= "./gameover.html?score=" + score;
+    }
+}
+divide.onclick=()=>{
+    if(Math.floor(number1/number2)==number3){
+       score++
+       randomise()
+       resetTime(timerId)
+    }else{
+       location.href= "./gameover.html?score=" + score;
+    }
+}
+modulus.onclick=()=>{
+    if((number1%number2)==number3){
+       score++
+       randomise()
+       resetTime(timerId)
+    }else{
+       location.href= "./gameover.html?score=" + score;
+    }
+}
+
 
 
 // timer functions
